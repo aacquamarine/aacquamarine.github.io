@@ -191,7 +191,7 @@ ul.callbacks_tabs {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: #48bf91;
+    background: #78812;
 }
 
 .callbacks_here a:after {
@@ -202,33 +202,33 @@ ul.callbacks_tabs {
 
 /*
 .callbacks_nav {
-	position: absolute;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	top: 78%;
-	opacity: 0.7;
-	z-index: 3;
-	text-indent: -9999px;
-	overflow: hidden;
-	text-decoration: none;
-	height: 34px;
-	width: 34px;
-	background: url("../images/left.png") no-repeat 0px 0px;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 78%;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 34px;
+    width: 34px;
+    background: url("../images/left.png") no-repeat 0px 0px;
 }
 .callbacks_nav.prev {
-	left: auto;
-	background: url("../images/back.png") no-repeat 0px 0px;
-	left: 18em;
+    left: auto;
+    background: url("../images/back.png") no-repeat 0px 0px;
+    left: 18em;
 }
 .callbacks_nav.next {
-	left: auto;
-	background: url("../images/next.png") no-repeat 0px 0px;
-	right: 18em;
+    left: auto;
+    background: url("../images/next.png") no-repeat 0px 0px;
+    right: 18em;
 }
 .callbacks_nav:active {
-	opacity: 1.0;
+    opacity: 1.0;
 }
 .callbacks2_nav:active {
-	opacity: 1.0;
+    opacity: 1.0;
 }*/
 
 #slider-pager a {
@@ -336,7 +336,7 @@ p.sub-para {
     letter-spacing: 2px;
     font-weight: 400;
     line-height: 1.15em;
-    text-shadow: 4px 1px 1px #48bf91;
+    text-shadow: 4px 1px 1px #161479;
 }
 
 .slider-info p {
@@ -393,7 +393,7 @@ h1.ab-title {
 
 h3.w3ls-title {
     font-size: 3em;
-    color: #48BF91;
+    color: #151472;
 }
 
 h4.w3ls-title {
@@ -1380,9 +1380,9 @@ h5.modal-title {
     h5.agile-title {
         font-size: 2.3em;
     }
-	.navbar-nav .dropdown-menu{
-		text-align:center;
-	}
+    .navbar-nav .dropdown-menu{
+        text-align:center;
+    }
 }
 
 @media screen and (max-width: 900px) {
