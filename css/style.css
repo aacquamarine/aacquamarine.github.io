@@ -191,7 +191,7 @@ ul.callbacks_tabs {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: #48bf91;
+    background: #161479;
 }
 
 .callbacks_here a:after {
@@ -336,7 +336,7 @@ p.sub-para {
     letter-spacing: 2px;
     font-weight: 400;
     line-height: 1.15em;
-    text-shadow: 4px 1px 1px #48bf91;
+    text-shadow: 4px 1px 1px #161479;
 }
 
 .slider-info p {
@@ -384,7 +384,7 @@ section#pricing {
 
 h1.ab-title {
     font-size: 2.5em;
-    color: #48BF91;
+    color: #151472;
 }
 
 .lead {
@@ -393,7 +393,7 @@ h1.ab-title {
 
 h3.w3ls-title {
     font-size: 3em;
-    color: #48BF91;
+    color: #151472;
 }
 
 h4.w3ls-title {
