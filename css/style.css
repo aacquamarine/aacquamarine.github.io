@@ -22,6 +22,7 @@ body a {
     text-decoration: none;
 }
 
+
 h1,
 h2,
 h3,
@@ -70,6 +71,15 @@ header h1 a span {
     font-size: 12px;
     letter-spacing: 5px;
     word-spacing: 5px;
+}
+
+.css img{
+ float: center;
+ width: 231px;
+ height: 320px;
+ border: thin solid;
+ padding: 5px;
+ margin: 0px 10px 10px 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
