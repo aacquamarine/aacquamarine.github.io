@@ -2,7 +2,7 @@
 Author: Alexandre
 -->
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
 	<title> - | Lavanderia Acqua Marine | -</title>
@@ -10,7 +10,7 @@ Author: Alexandre
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta name="keywords" content="Go Laundry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+                                   SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -27,6 +27,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" href="css/swipebox.css">
 	<!-- Custom CSS -->
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/main-slider.css" rel='stylesheet' type='text/css' />
 	<!-- font-awesome icons -->
 	<link href="css/fontawesome-all.min.css" rel="stylesheet">
 	<!-- //Custom Theme files -->
@@ -34,6 +35,25 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
 	    rel="stylesheet">
 	<!--//webfonts-->
+	<meta name="viewport" content="width=device, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+	.mySlides {display:none}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+	<style>
+		ol#servicos li {
+		  display:inline;
+		}
+	</style>
+	<style>
+		.dequatro {
+			display: inline-block;
+		}
+	</style>
 </head>
 
 <body>
@@ -55,9 +75,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<li class="nav-item  mr-3 mx-auto">
 								<a class="nav-link scroll" href="#about">Sobre</a>
 							</li>
-							<li  class="nav-item  mr-3 mx-auto">
-								<a class="nav-link scroll" href="#services">Servicos</a>
-							</li>	
 							<li class="nav-item  mr-3 mx-auto">
 								<a class="nav-link scroll" href="#franqueado">Franquia</a>
 							</li>
@@ -67,12 +84,15 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 							<li  class="nav-item  mr-3 mx-auto">	
 								<a class="nav-link scroll" href="#pricing">Preços</a>
 							</li>	
+							<li  class="nav-item  mr-3 mx-auto">
+								<a class="nav-link scroll" href="#services">Servicos</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link scroll" href="#contact">Lojas</a>
 							</li>
 
-						&emsp; &emsp; &emsp; &emsp;
-						<div class="container">					
+						<!--&emsp; &emsp; &emsp; &emsp;-->
+						<!--<div class="container">					
 							<div class="footerv2-w3ls text-center">
 								<ul class="social-iconsv2 agileinfo mt-3">
 									<li>
@@ -86,7 +106,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 										</a>
 									</li>
 								</ul>
-							</div>		
+							</div>-->		
 						</ul>
 					</div>						
 				</div>
@@ -95,34 +115,22 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	</header>
 	<!-- //header -->
 	<!-- banner -->
-	<div class="banner" id="home">
-		<div class="container">
-			<div class="banner-text text-center">
-				<div class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="slider-info">
-								<h3 class="text-capitalize">Cuidamos de todos os seus rebentos valorizados.</h3>
-								<!-- <a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">Saiba mais</a> -->
-							</div>
-						</li>
-						<li>
-							<div class="slider-info">
-								<h3 class="text-capitalize">Confie em nós, nós vamos salvar o seu tempo.</h3>
-								<!-- <a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">Saiba mais</a> -->
-							</div>
-						</li>
-						<li>
-							<div class="slider-info">
-								<h3 class="text-capitalize">Oferecemos os melhores serviços de lavandaria.</h3>
-								<!-- <a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">Saiba mais</a> -->
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="sreen-gallery-cursual" class="owl-carouselpb-5" id="Home">
+		<div class="w3-content w3-display-container" style="background-size: 300px 150px;">
+		  	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
+		 	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
+		 	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
+	  		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+		    	<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+		   	    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+		   
+			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+		    
+	  	    </div>
+	    </div>
+    </div>
 	<!-- //banner -->
 	<!-- about -->
 	<section class="about-w3ls" id="about">
@@ -148,7 +156,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	</section>
 	<!-- //about -->
 	<!--services-->
-	<div class="agileits-services py-md-5 py-3" id="services">
+	<div class="agileits-services py-md-5 py-3">
 		<div class="container">
 			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">O que fazemos</h3>
 			<div class="agileits-services-row row py-md-5 pb-5">
@@ -287,13 +295,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<span>Simples</span>
 					</div>
 					<ul class="list-group-flush">
-						<li class="list-group-item">Blazer --- R$25,50</li>
-						<li class="list-group-item">Blusa --- R$19,00</li>
-						<li class="list-group-item">Calça --- R$19,50</li>
-						<li class="list-group-item">Camisa(Passar) --- R$9,50</li>
-						<li class="list-group-item">Camisa(Lavar) --- R$14,50</li>
-						<li class="list-group-item">Cobertor(Solteiro) --- R$33,00</li>
-						<li class="list-group-item">Cobertor(Casal) --- R$37,00</li>
+						<li class="list-group-item text-left">Blazer -------------- R$25,50</li>
+						<li class="list-group-item text-left">Blusa -------------- R$19,00</li>
+						<li class="list-group-item text-left">Calça -------------- R$19,50</li>
+						<li class="list-group-item text-left">Camisa(Passar) ----- R$9,50</li>
+						<li class="list-group-item text-left">Camisa(Lavar) ---- R$14,50</li>
+						<li class="list-group-item text-left">Cobertor(Solt) ----- R$33,00</li>
+						<li class="list-group-item text-left">Cobertor(Casal) --- R$37,00</li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center pb-0 pt-3 px-3 agile-pricegrid">
@@ -305,14 +313,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<span>Simples</span>
 					</div>
 					<ul class="list-group-flush">
-						<li class="list-group-item">Edredom(Solteiro) -- R$39,00</li>
-						<li class="list-group-item">Edredom(Casal) --- R$45,00</li>
-						<li class="list-group-item">Edredom(King) --- R$55,00</li>
-						<li class="list-group-item">Edredom(Pena) --- R$95,00</li>
-						<li class="list-group-item">Jaqueta --- R$32,00</li>
-						<li class="list-group-item">Saia --- R$23,00</li>
-						<li class="list-group-item">Terno --- R$45,00</li>
-						<li class="list-group-item">Vestidos --- R$45,00</li>
+						<li class="list-group-item text-left">Edredom(Solt) ---- R$39,00</li>
+						<li class="list-group-item text-left">Edredom(Casal) --- R$45,00</li>
+						<li class="list-group-item text-left">Edredom(King) ---- R$55,00</li>
+						<li class="list-group-item text-left">Edredom(Pena) --- R$95,00</li>
+						<li class="list-group-item text-left">Jaqueta ----------- R$32,00</li>
+						<li class="list-group-item text-left">Saia -------------- R$23,00</li>
+						<li class="list-group-item text-left">Terno ------------- R$45,00</li>
+						<li class="list-group-item text-left">Vestidos ----------- R$45,00</li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center p-3  agile-pricegrid">
@@ -324,13 +332,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<span>Artesanal</span>
 					</div>
 					<ul class="list-group-flush">
-						<li class="list-group-item">Calça --- R$32,00</li>
-						<li class="list-group-item">Camisa --- R$19,50</li>
-						<li class="list-group-item">Paletó/Blazer --- R$39,00</li>
-						<li class="list-group-item">Terno --- R$71,00</li>
-						<li class="list-group-item">Vestido Seda --- R$75,00</li>
-						<li class="list-group-item">Vestido Festa --- R$170,00</li>
-						<li class="list-group-item">Gravatas --- R$58,00</li>
+						<li class="list-group-item text-left">Calça -------------- R$32,00</li>
+						<li class="list-group-item text-left">Camisa ------------ R$19,50</li>
+						<li class="list-group-item text-left">Paletó/Blazer ------ R$39,00</li>
+						<li class="list-group-item text-left">Terno -------------- R$71,00</li>
+						<li class="list-group-item text-left">Vestido Seda ------ R$75,00</li>
+						<li class="list-group-item text-left">Vestido Festa ---- R$170,00</li>
+						<li class="list-group-item text-left">Gravatas ----------- R$58,00</li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center pb-0 pt-3 px-3 agile-pricegrid">
@@ -342,73 +350,207 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 						<span>Tapetes</span>
 					</div>
 					<ul class="list-group-flush">
-						<li class="list-group-item">Comum Nacional --- R$45,00</li>
-						<li class="list-group-item">Kilim --- R$55,00</li>
-						<li class="list-group-item">Belga e Sisal --- R$55,00</li>
-						<li class="list-group-item">Ruth, Santa Monica -- R$75,00</li>
-						<li class="list-group-item">Arraiolo --- R$75,00</li>
-						<li class="list-group-item">Persa --- R$85,00</li>
-						<li class="list-group-item">Chines, Marroquino -- R$85,00</li>
+						<li class="list-group-item text-left">Comum Nacional -- R$45,00</li>
+						<li class="list-group-item text-left">Kilim -------------- R$55,00</li>
+						<li class="list-group-item text-left">Belga e Sisal ------ R$55,00</li>
+						<li class="list-group-item text-left">Ruth,Santa Monica  R$75,00</li>
+						<li class="list-group-item text-left">Arraiolo ----------- R$75,00</li>
+						<li class="list-group-item text-left">Persa -------------- R$85,00</li>
+						<li class="list-group-item text-left">Chines,Marroquino  R$85,00</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- //pricing -->
-	<!-- testimonials -->
-		<section class="wthree-row py-5 testi-agile" id="testimonials">
-		<div class="container py-md-5 py-3">
-			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">Pacotes e Promoções</h3>
-			<div class="w3_testimonials_grids w3_testimonials_grids">
-				<div class="sreen-gallery-cursual">
-					<div id="owl-demo" class="owl-carouselpb-5">
-						
-						<div class="container col-sm-4">
-							<div class="css col-md-4">
-						
-							<img src="images/1_2.png" alt="De CSS" title="Pacotes"/>
-							
-							</div>
-						</div>
-						
-					</div>
+	<!-- stats -->
+	<section class="agile_stats text-center py-5" id="services">
+	  <div class="row">
+		<div class="container pt-sm-5">
+			<div class="stats_agile mb-sm-5 mb-3">
+				<div class="agileits-services-row row py-md-5 pb-5">
+				<div class="col-lg-3 col-md-6 agileits-services-grids">
+					<span class="fab fa-uniregistry p-4"></span>
+					<h4 class="mt-2 mb-3">Sala</h4>
+					 <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Sofá</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample1">
+					      <div class="card card-body">
+					        Anim1 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Cortinas</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample3">
+					      <div class="card card-body">
+					        Anim3 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Almofada</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample2">
+					      <div class="card card-body">
+					        Anim2 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Tapetes</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+				</div>
+				<div class="col-lg-3 col-md-6 agileits-services-grids mt-md-0 mt-3">
+					<span class="fab fa-jenkins p-4"></span>
+					<h4 class="mt-2 mb-3">Quarto</h4>
+					<li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Travisseiro</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample2">
+					      <div class="card card-body">
+					        Anim2 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Edredom</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Almofada</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample2">
+					      <div class="card card-body">
+					        Anim2 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Camisas</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+				</div>
+
+				<div class="col-lg-3 col-md-6 agileits-services-grids mt-lg-0 mt-3">
+					<span class="fab fa-schlix p-4"></span>
+					<h4 class="mt-2 mb-3">Bebê & Infantil</h4>
+					<li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Pélucia</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample1">
+					      <div class="card card-body">
+					        Anim1 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Roupas Infantil</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample2">
+					      <div class="card card-body">
+					        Anim2 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Carrinho de Bebê</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+				</div>
+				<div class="col-lg-3 col-md-6 agileits-services-grids mt-lg-0 mt-3">
+					<span class="fas fa-magic p-4"></span>
+					<h4 class="mt-2 mb-3">Outros</h4>
+					<li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Mala</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample1">
+					      <div class="card card-body">
+					        Anim1 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Tênis</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample2">
+					      <div class="card card-body">
+					        Anim2 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Couro</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
+					  <li class="text-center"><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">Vestido Festa</a></li>
+					 <li><div class="col">
+					    <div class="collapse multi-collapse" id="multiCollapseExample7">
+					      <div class="card card-body">
+					        Anim7 pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					      </div>
+					    </div>
+					  </div></li>
 				</div>
 			</div>
-		</div>
+		  </div>
+	   </div>
+    </div>
 	</section>
+	<!-- //stats -->
 	<section class="wthree-row py-5 w3-contact" id="contact">
 		<div class="container py-md-5">
 			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">Nossas Lojas</h3>
 			<div class="row contact-form py-3">
 				<div class="col-lg-6  mt-lg-0 mt-5 map contact-center">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.97650535152!2d-46.6533571850221!3d-23.56928728467888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bf5f7a8bc5%3A0xc6809d45da98b4ed!2sAlameda+Ja%C3%BA%2C+45+-+Jardim+Paulista%2C+S%C3%A3o+Paulo+-+SP%2C+01420-001!5e0!3m2!1sfr!2sbr!4v1553380488387" width="600" height="500" frameborder="0" style="border:0" allowfullscreen>						
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.97650535152!2d-46.6533571850221!3d-23.56928728467888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bf5f7a8bc5%3A0xc6809d45da98b4ed!2sAlameda+Ja%C3%BA%2C+45+-+Jardim+Paulista%2C+S%C3%A3o+Paulo+-+SP%2C+01420-001!5e0!3m2!1sfr!2sbr!4v1553380488387" width="400" height="300" frameborder="0" style="border:0" allowfullscreen>						
 					</iframe>
 				</div>
-
-				<div class="address mt-3" class="text-center">
-						<h5 class="pb-3 text-center">Loja 1</h5>
-						<address>
-							<p class="c-txt" class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista - SP</p>
-							<p class="text-center">
-								11 3288-5274 e 11 94634-0485</p>
-							<p>
-
-						<h5 class="pb-3 text-center" class="text-center">Loja 2</h5>
-							<p class="c-txt">Rua José Maria Lisboa, 266 - Jardim Paulista - SP</p>
-							<p class="text-center">
-								11 3171-1859 e 11 96398-8287</p>
-							<p>
-						<h5 class="pb-3 text-center" class="text-center">Loja 3</h5>
-							<p class="c-txt">Rua Carlos Sampaio, 201 - Cerqueira Cesar - SP</p>
-							<p class="text-center">
-								Atendemos somente dentro do Hotel</p>
-							<p>		
-						<h5 class="pb-3 text-center" class="text-center">Nosso E-mail</h5>		
-								<p class="text-center">
-									<a>lavanderia_acquamarine@outlook.com</a>
-								</p>
-						</address>
-				</div>
+				
+				 <div class="row">
+                        <div class="col-sm-5">
+                            <ul class="nostyle">
+                                <li class="text-center">Unidade 1
+                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
+                                	<h6>11 3288-5274</h6>
+                                </li>
+                                <br>
+                                <br>                             
+                                <li class="text-center">Unidade 2
+                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
+                                	<h6>11 3288-5274</h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5">
+                            <ul class="nostyle">
+                                <li class="text-center">Unidade 3
+                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
+                                	<h6>11 3288-5274</h6>
+                                </li>
+                                <br>
+                                <br>
+                                <li class="text-center">E-mail
+                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
+                                	<h6>11 3288-5274</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 				
 			</div>
 		</div>
@@ -469,15 +611,104 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 	</footer>
 	<!-- //footer -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:60px;height:60px;bottom:60px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:50px;height:50px;bottom:60px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:20px;box-shadow: 1px 1px 2px #888;
 	     z-index:1000;" target="_blank">
-		<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+		<i style="margin-top:15px" class="fa fa-whatsapp"></i>
+		</a>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:40px;height:40px;bottom:205px;right:30px;background-color:#3b5998;color:#FFF;border-radius:50px;text-align:center;font-size:20px;box-shadow: 1px 1px 2px #888;
+	     z-index:1000;" target="_blank">
+		<i style="margin-top:12px" class="fab fa-facebook-f"></i>
+		</a>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:40px;height:40px;bottom:135px;right:30px;background-color:#f09433;color:#FFF;border-radius:50px;text-align:center;font-size:20px;box-shadow: 1px 1px 2px #888;
+	     z-index:1000;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);box-shadow: 0px 3px 10px rgba(0,0,0,.25);"		
+	      target="_blank">
+		<i style="margin-top:12px" class="fab fa-instagram"></i>
 		</a>
 	<!-- js-->
 	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- js-->
-	<!-- Banner text Responsiveslides -->
 	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/move-top.js "></script>
+	<script src="js/easing.js "></script>
+	<script src="js/SmoothScroll.min.js "></script>
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script src="js/counter.js"></script>
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/bootstrap.js "></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.adipoli.min.js"></script>
+	<script>
+		jQuery(function ($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+	<script>
+		$(function () {
+			$('.row2').adipoli({
+				'startEffect': 'overlay',
+				'hoverEffect': 'sliceDown'
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			/*
+			 var defaults = {
+				 containerID: 'toTop', // fading element id
+				 containerHoverID: 'toTopHover', // fading element hover id
+				 scrollSpeed: 1200,
+				 easingType: 'linear' 
+			 };
+			 */
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll ").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-white";
+		}
+	</script>
 	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
@@ -498,74 +729,11 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
-	<!-- //Banner text  Responsiveslides -->
-	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js "></script>
-	<script src="js/easing.js "></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll ").click(function (event) {
-				event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
-	<script>
-		$(document).ready(function () {
-			/*
-			 var defaults = {
-				 containerID: 'toTop', // fading element id
-				 containerHoverID: 'toTopHover', // fading element hover id
-				 scrollSpeed: 1200,
-				 easingType: 'linear' 
-			 };
-			 */
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-	<script src="js/SmoothScroll.min.js "></script>
-	<!-- //smooth-scrolling-of-move-up -->
-	<!-- gallery swipebox -->
-	<script src="js/jquery.swipebox.min.js"></script>
-	<script>
-		jQuery(function ($) {
-			$(".swipebox").swipebox();
-		});
-	</script>
-	<script src="js/jquery.adipoli.min.js"></script>
-	<!-- effect -->
-	<script>
-		$(function () {
-			$('.row2').adipoli({
-				'startEffect': 'overlay',
-				'hoverEffect': 'sliceDown'
-			});
-		});
-	</script>
-	<!-- //swipe box js -->
-	<!-- stats counter -->
-	<script src="js/counter.js"></script>
-	<!-- Date picker -->
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<script src="js/jquery-ui.js"></script>
 	<script>
 		$(function () {
 			$("#datepicker1,#datepicker2").datepicker();
 		});
 	</script>
-	<!-- // Date picker -->
-	<!-- testimonials -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<script src="js/owl.carousel.js"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -578,11 +746,5 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
-	<!-- //for testimonials slider-js-script-->
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.js ">
-	</script>
-	<!-- //Bootstrap Core JavaScript -->
 </body>
-
 </html>
