@@ -2,15 +2,14 @@
 * 	Owl Carousel Owl Demo Theme 
 *	v1.24
 */
-    #owl-demo .item{
-        margin: 3px;
-    }
-    #owl-demo .item img{
-        height: auto;
-		    height: auto;
-    margin: 0 auto;
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+	height: auto;
+   	margin: 0 auto;
    
-    }
+}
 
 .owl-theme .owl-controls{
 	margin-top: 18px;
@@ -193,7 +192,7 @@
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	.owl-carousel .owl-item{
+.owl-carousel .owl-item{
 	float: left;
 }
 .owl-controls .owl-page,
