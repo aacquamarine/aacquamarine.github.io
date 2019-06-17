@@ -22,7 +22,6 @@ body a {
     text-decoration: none;
 }
 
-
 h1,
 h2,
 h3,
@@ -95,6 +94,10 @@ header h1 a span {
     font-size: 12px;
     letter-spacing: 5px;
     word-spacing: 5px;
+}
+
+.alinhamento{
+    text-align: justify;"
 }
 
 .css img{
